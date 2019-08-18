@@ -1,33 +1,166 @@
-.App {
-  text-align: center;
+
+:root{
+    --color-stormy:#494E6b;
+    --color-cloud:#98878f;
+    --color-sunset:#985E6D;
+    --color-evening:#192231;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+
+.App{
+    background-image:
+            linear-gradient(to right bottom,
+            rgba(152,104,109,0.85),
+            rgba(73,78,107,0.85)
+            ),
+            url("./assets/login.jpg");
+
+
+   width: 1588px;
+    height: 845px;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.login{
+    position:absolute;
+    top:9%;
+    left:62%;
+    color: white;
+    width: 430px;
+    height: 700px;
+    background-color: rgba(25,34,49,0.75);
+    font-family: 'Quicksand', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+
+.form div input{
+    border: none;
+    background: transparent !important;
+    color: white;
+    font-size: 25px;
+    margin: 27px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.form div input:focus{
+    border: none;
+    outline: none;
+    background: transparent !important;
+}
+.form div label{
+    color: white;
+    font-size: 30px;
+    margin: 25px;
+    font-family: 'Quicksand', sans-serif;
+
+
+}
+.form{
+    margin-top: 60px;
+}
+.FormTitle {
+    font-size: 30px;
+    margin: 30px;
+
+}
+a{
+    color: white !important;
+
+}
+form:focus{
+    outline: none;
+    border: none;
+    background: transparent;
+}
+form{
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.bottom{
+    margin: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ .button{
+ position: relative;
+     bottom: -40px;
+     left: 80px;
+     color: white;
+    background-color: transparent;
+    border:3px solid var(--color-sunset);
+     font-size: 40px;
+    width: 50%;
+
+
+}
+ .welcome{
+     font-family: 'Quicksand', sans-serif;
+     font-size: 100px;
+     animation-name: moveInLeft;
+     animation-duration: 1s;
+     position: absolute;
+     top: 30%;
+     left: 15%;
+     color:white;
+
+ }
+ .span1{
+     display: block;
+     animation-name: moveInLeft;
+     animation-duration: 1.5s;
+ }
+ .span2{
+     display: block;
+     animation-name: moveInRight;
+     animation-duration: 1.5s;
+ }
+@keyframes moveInLeft{
+
+    0%{
+        opacity:0;
+
+    }
+   50%{
+       opacity: .5;
+   }
+    100%{
+        opacity: 1;
+
+    }
+
+}
+@keyframes moveInRight{
+
+    0%{
+        opacity:0;
+
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+
+    }
+
+}
+.Title{
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: var(--color-sunset) !important;
+    margin-right: 40px;
+    font-size: 40px;
+}
+.Title:hover{
+    border-bottom: 2px solid var(--color-evening);
+
+}
+.button:focus{
+    outline: none;
+
 }
